@@ -32,7 +32,7 @@ function App() {
               <Route path="/regn/:id" element={<Regn />}></Route>
             </Routes>
           </Suspense>
-          {/* <Footer/> */}
+          <Footer/>
         </BrowserRouter>
       </AnimalsProvider>
     </>
