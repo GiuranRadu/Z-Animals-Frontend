@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useReducer } from "react";
 
-const BASE_URL = 'http://localhost:3000'
+// const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://z-animals-backend.onrender.com'
 
 const AnimalsContext = createContext()
 
