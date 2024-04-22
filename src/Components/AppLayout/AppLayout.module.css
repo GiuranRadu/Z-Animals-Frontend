@@ -157,7 +157,8 @@
 
 @media (max-width:680px) {
   .upperContainer div {
-    left: 20px;    
+    left: 20px;   
+    width: 240px; 
   }
   .upperContainer div h2 {
     font-size: 2rem;
@@ -181,14 +182,14 @@
 
   .secondContainer img {
     width: 100%;
-  }
-  
+  }  
 }
 
 
 @media(max-width:380px) {
   .upperContainer div {
-    left: 20px;    
+    left: 10px;    
+    width: 240px;
   }
 
   .upperContainer div button{

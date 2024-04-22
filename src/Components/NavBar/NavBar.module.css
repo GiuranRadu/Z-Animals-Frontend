@@ -195,7 +195,7 @@
 
 @media (max-width:950px) {
   .input-div {
-    width: 200px;
+    width: 180px;
   }
 
   .found-animals-div div {
@@ -259,4 +259,15 @@
     width: 50px;
   }
 
+
+  .navBar{
+    gap:0;
+    padding: 0 20px;
+  }
+
+  .input-div{
+    width: 100%;
+  }
+
+ 
 }

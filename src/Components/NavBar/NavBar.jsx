@@ -38,7 +38,6 @@ function NavBar() {
   }
 
   function handleSideBar() {
-    console.log('MERGE');
     setShowNav(true)
   }
 
