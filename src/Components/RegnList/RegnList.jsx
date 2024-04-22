@@ -59,7 +59,7 @@ function RegnList() {
         </div>
         <button >
           {show ?
-            <IoIosArrowBack className={`${styles.arrow} ${styles['arrow-left']}`} /> :
+            <IoIosArrowBack className={`${styles.arrow} ${styles['arrow-left']}`} onClick={()=>hideNav() }/> :
             <IoIosArrowForward className={`${styles.arrow} ${styles['arrow-right']}`} />}
         </button>
       </div>

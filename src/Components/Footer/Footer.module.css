@@ -118,3 +118,29 @@
     flex-direction: column;
   }
 }
+
+
+@media(max-width:380px) {
+  .footer-container {
+    height: 45vh;
+  }
+
+  .titles-div>h1 {
+    font-size: 20px;    
+  }
+
+  .titles-div>h2 {
+    font-size: 17px;    
+  }
+  .titles-div>h3 {
+    font-size: 15px;    
+  }
+
+  .lower-div>div>p{   
+    font-size: 10px;
+  }
+
+  .ul-div>ul>li{
+    font-size: 8px;
+  }
+}

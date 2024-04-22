@@ -205,11 +205,9 @@
 
   .carousel-container {
     height: 400px;
-    /* background-color: red; */
   }
 
   .description {
-    /* height: 40%; */
     padding: 10px;
     margin-bottom: 50px;
   }
@@ -229,4 +227,13 @@
   .animal-div h2 {
     font-size: 10px;
   }
+}
+
+
+@media(max-width:400px) {
+  .carousel-container {
+    height: 280px;
+    /* background-color: red; */
+  }
+
 }

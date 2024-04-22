@@ -245,3 +245,18 @@
     cursor: pointer
   }
 }
+
+
+@media(max-width:400px) {
+  .found-animals-div div {
+    height: 40px;
+    font-size: 8px;
+    padding-left: 10px;
+  }
+
+  .found-animals-div div img {
+    height: 100%;
+    width: 50px;
+  }
+
+}

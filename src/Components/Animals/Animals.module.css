@@ -128,7 +128,6 @@
     font-size: 30px;
   }
 
-  .select-div {}
 
   .select-div select {
     padding: 5px;
@@ -149,5 +148,21 @@
 @media(max-width:650px) {
   .animal-div h2 {
     font-size: 15px;
+  }
+}
+
+@media(max-width:400px) {
+  .select-div select {
+    padding: 2px;
+    font-size: 10px;
+    width: 120px;
+  }
+
+  .select-div option {
+    font-size: 10px;
+  }
+
+  .animal-div{
+    width: 300px;
   }
 }
