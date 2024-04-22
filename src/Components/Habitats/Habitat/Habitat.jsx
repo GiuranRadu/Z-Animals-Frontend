@@ -77,7 +77,6 @@ function Habitat() {
             <h1>{currentClass._id}</h1>
             <p>{info[`${currentClass._id.replace(/\s/g, "")}`].description}</p>
           </div>
-
         </div>
 
 

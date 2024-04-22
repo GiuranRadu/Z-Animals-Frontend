@@ -3,6 +3,10 @@ import logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import { useAnimals } from '../../Context/AnimalsContext';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosCloseCircle } from "react-icons/io";
+
+
 
 function NavBar() {
 
@@ -12,13 +16,14 @@ function NavBar() {
 
   const [foundAnimals, setFoundAnimals] = useState([])
 
+  const [showNav, setShowNav] = useState(false)
+
+
   function handleSearch(value) {
     if (value.length >= 1) {
       const foundAnimals2 = animals.filter(animal => animal.name.toLowerCase().includes(value.toLowerCase()));
 
       setQuery(foundAnimals)
-      // console.log("QUERY=>", query);
-      // console.log("foundAnimals=>", foundAnimals2);
       setFoundAnimals(foundAnimals2)
 
     } else {
@@ -27,19 +32,37 @@ function NavBar() {
   }
 
   function resetValues() {
-    // console.log('merge');
     let myInput = document.querySelector('.my-input')
-    // console.log(myInput.value);
     myInput.value = '';
     setQuery('')
   }
 
+  function handleSideBar() {
+    console.log('MERGE');
+    setShowNav(true)
+  }
+
+
+
   return (
     <div className={styles.navBar}>
-
+      <div className={showNav ? `${styles['sideNavbar']}` : `${styles['sideNavbar']} ${styles['retracted']}`} onClick={() => setShowNav(false)}>
+        <span onClick={() => setShowNav(false)}><IoIosCloseCircle />
+        </span>
+        <ul>
+          <li><Link to='/animals' onClick={resetValues}>Animals</Link ></li>
+          <li><Link to='/habitats' onClick={resetValues}>Habitats</Link></li>
+          <li><Link to='/regnList' onClick={resetValues}>Regnum</Link></li>
+        </ul>
+      </div>
       <div className={styles['left-div']}>
+        <div className={styles['hamburger-menu-div']}>
+          <span>
+            <GiHamburgerMenu onClick={() => handleSideBar()} />
+          </span>
+        </div>
         <div>
-          <Link to='/'>  <img src={logo} alt="Logo" onClick={resetValues}/></Link>
+          <Link to='/'>  <img src={logo} alt="Logo" onClick={resetValues} /></Link>
         </div>
         <ul>
           <li><Link to='/animals' onClick={resetValues}>Animals</Link ></li>
@@ -66,7 +89,10 @@ function NavBar() {
           <div>
             <p>Nothing found...</p>
           </div>
+
         </div>}
+
+
 
       </div>
 

@@ -23,17 +23,23 @@ function AppLayout() {
         </div>
       </div>
 
+      <div className={styles['view-all-animals']}>
+        <Link to={'/animals'}>
+          <button>VIEW ALL ANIMALS A-Z</button>
+        </Link>
+      </div>
+
       <div className={styles.secondContainer}>
         <div>
           <img src={reptile_pic} alt="" />
           {/* <Link to={'/animals?category=reptiles'}> */}
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
             <h1>Reptiles</h1>
           </Link>
         </div>
         <div>
           <img src={mammals_pic} alt="" />
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
 
             <h1>Mammals</h1>
           </Link>
@@ -41,30 +47,30 @@ function AppLayout() {
         </div>
         <div>
           <img src={arthropods_pic} alt="" />
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
             <h1>Arthropods</h1>
           </Link>
         </div>
         <div>
           <img src={birds_pic} alt="" />
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
             <h1>Birds</h1>
           </Link>
         </div>
         <div>
           <img src={fish_pic} alt="" />
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
             <h1>Fish</h1>
           </Link>
         </div>
         <div>
           <img src={amphibians_pic} alt="" />
-          <Link to={'/animals'}>
+          <Link to={'/regnList'}>
             <h1>Amphibians</h1>
           </Link>
         </div>
       </div>
-
+     
     </div>
   )
 }

@@ -90,7 +90,7 @@ function SelectedAnimal() {
     loading ? <SpinnerFullPage /> :
       (<div className={styles['container']}>
         <div className={styles['first-container']}>
-
+         
           <div className={styles['f-c-left']}>
             {/* //* CAROUSEL */}
             <div className={styles['carousel']}>

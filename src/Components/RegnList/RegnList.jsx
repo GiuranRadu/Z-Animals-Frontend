@@ -48,7 +48,7 @@ function RegnList() {
 
   return (
     <div className={styles['container']}>
-      <div className={show ? `${styles.sideNavbar}` : `${styles.sideNavbar} ${styles.retracted}`} onMouseEnter={showNav} onMouseLeave={hideNav}>
+      <div className={show ? `${styles['sideNavbar']}` : `${styles['sideNavbar']} ${styles['retracted']}`} onMouseEnter={showNav} onMouseLeave={hideNav}>
         <div className={styles.list}>
           {imgArray.map((img, i) =>
             <div className={styles.list_div} key={i}>
@@ -78,7 +78,7 @@ function RegnList() {
         </div>
       }
       {regn &&
-        <div className={styles.mainBody2} style={{ backgroundImage: `url(${bgImgs[regn._id]})` }}>
+        <div className={styles.mainBody} style={{ backgroundImage: `url(${bgImgs[regn._id]})` }}>
           <div className={styles.landingPage}>
             <h1>{regn._id}</h1>
             <ul><li>

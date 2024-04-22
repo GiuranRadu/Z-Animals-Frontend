@@ -11,6 +11,7 @@ import Habitats from './Components/Habitats/Habitats'
 import Habitat from './Components/Habitats/Habitat/Habitat'
 import SelectedAnimal from "./Components/Animals/SelectedAnimal/SelectedAnimal"
 import SpinnerFullPage from './Handy/SpinnerFullPage'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
               <Route path="/regn/:id" element={<Regn />}></Route>
             </Routes>
           </Suspense>
-
+          {/* <Footer/> */}
         </BrowserRouter>
       </AnimalsProvider>
     </>

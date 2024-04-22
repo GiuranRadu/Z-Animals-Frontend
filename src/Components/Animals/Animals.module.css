@@ -2,6 +2,8 @@
   min-height: 100vh;
   background-image: url('../../Assets/Habitats/vector-background2.jpg');
   padding-bottom: 50px;
+  background-position: center center;
+  background-size: contain;
 }
 
 .container h1 {
@@ -118,4 +120,34 @@
 .load-more-div>button:hover {
   opacity: 0.8;
   transition: 0.5s;
+}
+
+
+@media(max-width:900px) {
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .select-div {}
+
+  .select-div select {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .select-div option {
+    font-size: 12px;
+  }
+
+  .load-more-div>button {
+    padding: 12px 20px;
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media(max-width:650px) {
+  .animal-div h2 {
+    font-size: 15px;
+  }
 }

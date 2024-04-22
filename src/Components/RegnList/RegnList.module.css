@@ -1,6 +1,6 @@
 .container {
   /* background-color: red; */
-  height: 90vh;
+  min-height: 90vh;
   position: relative;
   display: flex;
 }
@@ -77,7 +77,6 @@
   width: 100%;
   height: 100%;
   transition: 1s;
-
 }
 
 .list_div:hover h1 {
@@ -106,7 +105,7 @@
 }
 
 /* ! AICI SUNT */
-.mainBody2 {
+.mainBody {
   padding: 30px 200px 30px 240px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,4 +149,91 @@
 
 .arrowLeft {
   font-size: 4rem;
+}
+
+
+
+
+@media(max-width:1250px) {
+
+  .mainBody {
+    padding: 30px 50px 30px 240px;
+  }
+
+  .landingPage {}
+}
+
+@media(max-width:1250px) {
+  .landingPage h1 {
+    font-size: 35px;
+  }
+
+  .landingPage p {
+    font-size: 13px;
+  }
+}
+
+
+@media(max-width:900px) {
+
+  .mainBody {
+    padding: 30px 50px 30px 140px;
+  }
+
+  .sideNavbar {
+    width: 120px;
+  }
+
+  .sideNavbar button {
+    width: 30px;
+  }
+
+  .retracted {
+    left: -90px;
+  }
+
+  .arrow {
+    width: 30px;
+  }
+
+  .landingPage button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .arrowLeft {
+    font-size: 25px;
+  }
+
+  .list_div h1 {
+    font-size: 15px;
+  }
+}
+
+
+@media(max-width:650px) {
+  .landingPage {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .mainBody {
+    padding: 10px 10px 30px 40px;
+  }
+
+  .sideNavbar {
+    z-index: 1;
+    width: 150px;
+  }
+
+  .retracted {
+    left: -120px;
+  }
+
+  .landingPage h1 {
+    font-size: 25px;
+  }
+
+  .landingPage p {
+    font-size: 10px;
+  }
 }

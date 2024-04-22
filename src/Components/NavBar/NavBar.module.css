@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  position: relative;
 }
 
 .left-div {
@@ -70,8 +71,6 @@
   padding: 20px 10px;
   max-height: 70vh;
   overflow-y: scroll;
-
-
 }
 
 /*! ------ Scrollbar Track  ------ */
@@ -121,4 +120,128 @@
 
 .found-animals-div div p {
   color: var(--color-dark--1)
+}
+
+.hamburger-menu-div {
+  display: none;
+}
+
+.sideNavbar {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../Assets//jungle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 1s;
+  height: 100vh;
+  z-index: 2;
+  box-shadow: inset 10px 10px 10px 70px var(--color-brand--4);
+}
+
+.retracted {
+  position: absolute;
+  top: -100vh;
+  transition: all 1s
+}
+
+.sideNavbar>span {
+  border-radius: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+
+}
+
+.sideNavbar>ul>li {
+  list-style: none;
+  font-size: 30px;
+}
+
+.sideNavbar>ul>li>a {
+  color: white;
+}
+
+@media (max-width:1200px) {
+  .navBar {
+    font-size: 16px;
+  }
+
+  .input-div {
+    width: 300px;
+  }
+
+  .found-animals-div div {
+    height: 70px;
+    font-size: 12px;
+  }
+
+  .found-animals-div div img {
+    height: 100%;
+    width: 70px;
+  }
+}
+
+
+@media (max-width:950px) {
+  .input-div {
+    width: 200px;
+  }
+
+  .found-animals-div div {
+    height: 50px;
+    font-size: 10px;
+  }
+
+  .found-animals-div div img {
+    height: 100%;
+    width: 60px;
+  }
+
+}
+
+
+@media (max-width:850px) {
+  .navBar {
+    padding: 0 10px;
+  }
+
+  .left-div {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .input-div {
+    height: 30px;
+  }
+
+  .input-div input {
+    font-size: 12px;
+  }
+}
+
+@media(max-width:620px) {
+  .left-div ul {
+    display: none;
+  }
+
+  .hamburger-menu-div {
+    display: block;
+  }
+
+  .hamburger-menu-div>span {
+    color: white;
+    font-size: 30px;
+    cursor: pointer
+  }
 }
