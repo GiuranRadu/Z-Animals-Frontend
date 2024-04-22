@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.upperContainer {
+  min-height: 90vh;
+  background-image: url('./../../Assets/animals_hero_kangaroo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative
+}
+
+.upperContainer div {
+  width: 45rem;
+  height: 20rem;
+  position: absolute;
+  right: 200px;
+  bottom: 200px;
+}
+
+.upperContainer div h2 {
+  color: var(--color-brand--5);
+  font-size: 4rem;
+  text-shadow: 0px 0px 7px black;
+}
+
+.upperContainer div h1 {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 0px 0px 7px black;
+}
+
+.upperContainer div button {
+  padding: 15px 30px;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: var(--color-brand--2);
+  border: none;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0px 0px 7px black;
+  cursor: pointer;
+
+}
+
+
+
+.secondContainer {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.secondContainer div {
+  /* background-color: tan; */
+  /* border: 4px solid black; */
+  position: relative;
+  height: 37rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondContainer img {
+  height: 120%;
+  transition: 1s;
+}
+
+.secondContainer img:hover {
+  scale: 1.2;
+  transition: 1s;
+}
+
+
+.secondContainer h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  cursor: pointer;
+  color: white;
+  font-size: 3rem;
+}
+
+.secondContainer h1:hover {
+  text-decoration: underline;
+}

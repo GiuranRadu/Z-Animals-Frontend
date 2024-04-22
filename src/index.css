@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+:root {
+  --color-brand--1: #079526;
+  --color-brand--2: #10814c;
+  --color-brand--3: #0e6a3f;
+  --color-brand--4: #074327;
+
+  --color-brand--5: #C4D266;
+  --color-brand--6: #a99839;
+  --color-brand--7: #c0a848;
+  --color-brand--8: #e0f053;
+
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+
+  --color-light--1: #ececec;
+  --color-light--2: #d6dee0;
+  --color-light--3: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
