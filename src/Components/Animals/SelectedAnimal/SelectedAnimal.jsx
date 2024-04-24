@@ -7,7 +7,6 @@ import styles from './SelectedAnimal.module.css'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
 
 const MY_KEY = "5kCHcjfhCwX3QIF0Ptj0bw==Y6cmAzLoqHapwHhS"
-{/* <img src={animal.images[0]} alt="" /> */ }
 
 function SelectedAnimal() {
   const { id } = useParams(); //preiau id din url
@@ -22,7 +21,6 @@ function SelectedAnimal() {
   // console.log(selectedAnimal); //! aici imi randeaza de 10-12ori
 
   async function loadMore() {
-    // console.log("merge");
     try {
       setLoading(1)
       const response = await fetch(`https://api.api-ninjas.com/v1/animals?name=${animal.name}`, {
