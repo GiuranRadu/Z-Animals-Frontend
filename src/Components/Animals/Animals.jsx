@@ -25,8 +25,6 @@ function Animals() {
   }, [animals]);
 
  
-
-
   function handleCategory(e) {
     let category = e.target.value
     setSelectedCategory(category);
