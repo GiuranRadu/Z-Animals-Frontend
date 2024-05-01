@@ -9,7 +9,7 @@ function Animals() {
   // const location = useLocation()
   // const queryParams = new URLSearchParams(location.search);
   // const defaultCategory = queryParams.get('category');
-  console.log(animals); //!aici imi randeaza de 10-12 ori 
+  // console.log(animals); //!aici imi randeaza de 10-12 ori 
 
   const [sortedAnimals, setSortedAnimals] = useState([])
   const [selectedCategory, setSelectedCategory] = useState("category");
