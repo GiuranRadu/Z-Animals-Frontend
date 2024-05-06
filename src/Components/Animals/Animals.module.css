@@ -37,13 +37,19 @@
 }
 
 .image-div {
-  overflow: hidden;
   transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .image-div img {
-  transition: 1s;
+  height:  100%;
   width: 100%;
+  object-fit: cover;
+  transition: 1s;
 }
 
 .animal-div h2 {
