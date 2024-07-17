@@ -69,12 +69,14 @@
 }
 
 .secondContainer img {
-  height: 120%;
+  height: 100%;
+  width: 100%;
   transition: 1s;
+  object-fit: cover;
 }
 
 .secondContainer img:hover {
-  scale: 1.2;
+  scale: 1.1;
   transition: 1s;
 }
 
@@ -175,10 +177,7 @@
   .secondContainer {
     grid-template-columns: 1fr;
   }
-
-  .secondContainer img {
-    width: 100%;
-  }  
+ 
 }
 
 
