@@ -23,6 +23,7 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+  max-width: 1600px;
 }
 
 .animal-div {
